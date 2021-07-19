@@ -6,10 +6,10 @@ declare -x array
 echo ${arrays[@]}
 for ((i=0; i<length; i++))
 do 
-	if [ $((${arrays[i]%22)) == 0 ]
+	if [ $((${arrays[i]%11)) == 0 ]
 then 
 	array[i]=${arrays[i]}
 	fi
 done
 
-echo ${array[@]}
+echo ${array[i]}
